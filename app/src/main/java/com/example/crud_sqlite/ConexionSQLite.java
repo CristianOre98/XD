@@ -85,12 +85,13 @@
                         return estado;
                 }
 
+
+
                 public boolean insertardatos(Dto datos) {
                         boolean estado = true;
                         int resultado;
                         ContentValues registro = new ContentValues();
                         try {
-
                                 //registro.put(”codigo",datos.getCodigo());
                                 registro.put("codigo", datos.getCodigo());
                                 registro.put("descripcion", datos.getDescripcion());
@@ -117,6 +118,7 @@
                         }
                         return estado;
                 }
+
 
                 public boolean InsertRegister(Dto datos) {
                         boolean estado = true;
