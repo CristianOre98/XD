@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#C5C5C5"
-    tools:context=".ConsultaSpinner">
+    tools:context=".consulta_spinner">
 
     <TextView
         android:layout_width="match_parent"

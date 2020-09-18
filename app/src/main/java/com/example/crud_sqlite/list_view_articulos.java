@@ -27,7 +27,7 @@ public class list_view_articulos extends AppCompatActivity {
 
 
 ConexionSQLite conexion = new ConexionSQLite(this);
-Dto datos = new Dto();
+    Dto datos = new Dto();
 
 
 @Override

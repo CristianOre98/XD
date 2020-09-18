@@ -10,7 +10,7 @@
         import android.widget.Toast;
 
         import androidx.appcompat.app.AlertDialog;
-        //import android. app. AlertDialog,
+//        import android. app. AlertDialog;
 
         import java.text.SimpleDateFormat;
         import java.util.ArrayList;
@@ -304,7 +304,7 @@
                                 registro.put("descripcion", descripcion);
                                 registro.put("precio", precio);
                                 //int cant —— (int) this.getWritableDatabase().update(”adiculos”, registro, "codigo——" + codigo, null),”
-                                int cant = (int) bd.update("articuIos", registro, "codigo=" + codigo, null);
+                                int cant = (int) bd.update("articulos", registro, "codigo=" + codigo, null);
                                 //bd.update("articulos”,registro,"codigo——?”,parametros),’
                                 bd.close();
                                 if (cant > 0) estado = true;

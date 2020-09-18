@@ -36,7 +36,7 @@ public class consulta_spinner extends AppCompatActivity {
 
       //ArrayAdapter<CharSequence> adaptador —— new ArrayAdapter(this, android. R.layout. simple spinner item, IistaArticulos);
         ArrayAdapter<CharSequence> adaptador = new ArrayAdapter(this,
-                        android.R.layout.simple_spinner_item, conexion.obtenerListaArticulos());
+                android.R.layout.simple_spinner_item, conexion.obtenerListaArticulos());
         sp_options.setAdapter(adaptador);
 
 
@@ -47,8 +47,7 @@ public class consulta_spinner extends AppCompatActivity {
                                                long I) {
 
                   if (position != 0) {
-                  tv_cod.setText("Codigo: " + conexion.consultaListaArticulos().get(position -
-                                    1).getCodigo());
+                  tv_cod.setText("Codigo: " + conexion.consultaListaArticulos().get(position - 1).getCodigo());
                     tv_descripcion.setText("Descripcion: " + conexion.consultaListaArticulos().get(position - 1).getDescripcion());
                     tv_precio.setText("Precio: " + String.valueOf(conexion.consultaListaArticulos().get(position - 1).getPrecio()));
 

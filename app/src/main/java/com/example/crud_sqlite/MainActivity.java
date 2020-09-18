@@ -177,12 +177,12 @@ public class MainActivity extends AppCompatActivity {
                 et_precio.setText(null);
                 return true;
             } else if (id == R.id.action_listaArticulos) {
-                Intent spinnerActivity = new Intent(MainActivity.this, ConsultaSpinner.class);
+                Intent spinnerActivity = new Intent(MainActivity.this, consulta_spinner.class);
                 startActivity(spinnerActivity);
                 return true;
             } else if (id == R.id.action_listaArticulos1) {
-                Intent IistViewActivity = new Intent(MainActivity.this, ListViewArticulos.class);
-                startActivity(IistViewActivity);
+                Intent listViewActivity = new Intent(MainActivity.this, list_view_articulos.class);
+                startActivity(listViewActivity);
                 return true;
             }
 
@@ -303,7 +303,7 @@ public class MainActivity extends AppCompatActivity {
                                 if(inputEt){
                                     String cod = et_codigo.getText().toString();
                                     datos.setCodigo(Integer.parseInt(cod));
-                                    if(conexion.bajaCodigo(MainActivity.this,datos)){
+                                    if(conexion.bajaCodigo(MainActivity.this, datos)){
                                         //Toast. makeText(this, "Registro eliminado satisfactoriamente.", Toast. LENG TH SHORT). show(),
                                         limpiarDatos();
                                     }else {
